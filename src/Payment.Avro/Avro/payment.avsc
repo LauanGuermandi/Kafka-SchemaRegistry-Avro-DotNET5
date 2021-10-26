@@ -1,0 +1,15 @@
+{
+    "type": "record",
+    "namespace": "Payment.Avro.Schemas",
+    "name": "PaymentAvro",
+    "fields": [
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "name": "price",
+        "type": "double"
+      }
+    ]
+  }
