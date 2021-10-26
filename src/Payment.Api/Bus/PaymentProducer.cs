@@ -17,9 +17,7 @@ namespace Payment.Api.Bus
 		/// Construtor.
 		/// </summary>
 		/// <param name="producerBuilder"></param>
-		public PaymentProducer(
-			IProducerBuilder<PaymentAvro> producerBuilder
-		)
+		public PaymentProducer(IProducerBuilder<PaymentAvro> producerBuilder)
 		{
 			_producer = new Lazy<IProducer<string, PaymentAvro>>(() => producerBuilder.Build());
 		}
